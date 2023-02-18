@@ -1,11 +1,12 @@
 import { type NextPage } from "next";
 // import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
+import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
-import { api } from "../utils/api";
+// import { api } from "../utils/api";
 
 const Home: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  // const hello = api.example.hello.useQuery({ text: "from tRPC" });
   return (
     <>
       <Head>
@@ -16,11 +17,9 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="min-h-screen bg-dark">
+      <main className="min-h-screen font-sans">
         <Navbar />
-        <h1 className="text-6xl font-bold text-light">
-          {hello.data ? hello.data.greeting : "Loading tRPC query..."}
-        </h1>
+        <Banner />
       </main>
     </>
   );

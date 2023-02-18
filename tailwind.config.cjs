@@ -3,11 +3,14 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors: {
-        dark: "#251749",
-        mediumHigh: "#263159",
-        mediumLow: "#495579",
-        light: "#FFFBEB",
+      // colors: {
+      //   dark: "#222222",
+      //   medium: "#434242",
+      //   brand: "#22A39F",
+      //   light: "#F3EFE0",
+      // },
+      fontFamily: {
+        sans: "Work Sans, sans-serif",
       },
     },
   },
