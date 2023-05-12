@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 // import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 // import { api } from "../utils/api";
 
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <main className="min-h-screen font-sans">
         <Navbar />
         <Banner />
+        <Footer />
       </main>
     </>
   );

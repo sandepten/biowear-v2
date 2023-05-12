@@ -1,5 +1,4 @@
 import { ChevronRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import type { NextComponentType, NextPageContext } from "next";
 import Link from "next/link";
 
 interface Props {
@@ -7,9 +6,7 @@ interface Props {
   setIsOpen: (isOpen: boolean) => void;
 }
 
-const HamburgerMenu: NextComponentType<NextPageContext, {}, Props> = (
-  props: Props
-) => {
+const HamburgerMenu = (props: Props) => {
   const { isOpen, setIsOpen } = props;
   const menu = [
     {
@@ -31,7 +28,7 @@ const HamburgerMenu: NextComponentType<NextPageContext, {}, Props> = (
   ];
   return (
     <div
-      className={`fixed top-0 z-10 h-screen w-[85%] bg-white transition-transform duration-150 ease-in-out ${
+      className={`fixed top-0 z-10 h-screen w-[85%] bg-white transition-transform duration-200 ease-in-out ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >

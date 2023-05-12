@@ -1,17 +1,16 @@
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import type { NextComponentType, NextPageContext } from "next";
 
 interface Props {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 }
 
-const Cart: NextComponentType<NextPageContext, {}, Props> = (props: Props) => {
+const Cart = (props: Props) => {
   const { isOpen, setIsOpen } = props;
   const cartItem = [];
   return (
     <div
-      className={`fixed top-0 right-0 z-10 h-screen w-[85%] bg-white transition-transform duration-150 ease-in-out ${
+      className={`fixed top-0 right-0 z-10 h-screen w-[85%] bg-white transition-transform duration-200 ease-in-out ${
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
